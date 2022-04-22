@@ -1,12 +1,3 @@
-import { ADDCOUNT, MINUS } from "../constant";
+import { countNumber } from "./count";
 
-export const addCount = (data) => ({ type: ADDCOUNT, data });
-export const minusCount = (data) => ({ type: MINUS, data });
-
-export const asyncAddCount = (data, time) => {
-  return (dispatch) => {
-    setTimeout(() => {
-      dispatch(addCount(data));
-    }, time);
-  };
-};
+export { countNumber };

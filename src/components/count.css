@@ -1,0 +1,10 @@
+.count {
+    margin: 0;
+    padding: 0;
+}
+.count >.content{
+    padding: 10px ;
+}
+.count >.btn{
+    margin:10px 20px;
+}
