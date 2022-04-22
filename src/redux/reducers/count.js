@@ -1,6 +1,6 @@
 import { ADDCOUNT, MINUS } from "../constant";
 const defaultState = 0;
-export const count = (state = defaultState, action) => {
+const count = (state = defaultState, action) => {
   const { type, payload } = action;
   switch (type) {
     case ADDCOUNT:
@@ -11,3 +11,4 @@ export const count = (state = defaultState, action) => {
       return state;
   }
 };
+export default count;
