@@ -1,4 +1,8 @@
 import { useEffect } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+// 一般组件
 import Count from "./components/Count";
 import SearchList from "./components/SearchList";
 import SearchListRedux from "./components/SearchListRedux";
@@ -22,6 +26,18 @@ function App() {
 
   return (
     <div className="App">
+      <div className="router-list">
+        <div className="links">
+          <Link to="/Home">Home</Link> &nbsp;&nbsp;
+          <Link to="/About">About</Link>
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="Home" element={<Home />} />
+          <Route path="About" element={<About />} />
+        </Routes>
+      </div>
+
       <Count name="shishaofeng">hello</Count>
       <SearchList></SearchList>
       <SearchListRedux></SearchListRedux>
