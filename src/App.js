@@ -6,11 +6,16 @@ import "./App.css";
 
 function App() {
   useEffect(() => {
-    requst({ url: "api/get/news", methods: "get", params: {} }).then(
-      ({ data }) => {
-        console.log(data);
-      }
-    );
+    const fetchData = async () => {
+      const { data } = await requst({
+        url: "api/get/news",
+        methods: "get",
+        params: {},
+      });
+
+      console.log(data);
+    };
+    fetchData();
   }, []);
 
   return (
