@@ -5,6 +5,8 @@ import { ADDCOUNT, MINUS } from "../redux/constant";
 // 获取actions方法
 import { countNumber } from "../redux/actions";
 
+import useWindowsWidth from "../hooks/useWindowsWidth";
+
 import "./count.css";
 
 function Count(props) {
@@ -15,6 +17,8 @@ function Count(props) {
     dispatch(countNumber({ type, payload: 1 }));
   };
 
+  const data = useWindowsWidth();
+  console.log(data);
   return (
     <div className="count">
       <h1>redux-求和案例</h1>
