@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 function About() {
+  let [params] = useSearchParams();
+  console.log(params.get("name"));
   return (
     <div>
       <Link to={"/Home"}>

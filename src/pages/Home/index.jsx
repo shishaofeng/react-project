@@ -1,5 +1,8 @@
-import { Link } from "react-router-dom";
-function Home() {
+import { Link, useParams } from "react-router-dom";
+function Home(props) {
+  console.log(props);
+  const params = useParams();
+  console.log(params);
   return (
     <div>
       <Link to={"/About"}>

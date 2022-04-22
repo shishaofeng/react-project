@@ -28,12 +28,12 @@ function App() {
     <div className="App">
       <div className="router-list">
         <div className="links">
-          <Link to="/Home">Home</Link> &nbsp;&nbsp;
-          <Link to="/About">About</Link>
+          <Link to={`/Home/1/title`}>Home--params传参</Link> &nbsp;&nbsp;
+          <Link to="/About?name=1">About-query传参</Link>
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="Home" element={<Home />} />
+          <Route path="Home/:id/:title" element={<Home />} />
           <Route path="About" element={<About />} />
         </Routes>
       </div>
