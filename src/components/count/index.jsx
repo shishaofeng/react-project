@@ -7,9 +7,10 @@ import { countNumber } from "../../redux/actions";
 
 import useWindowsWidth from "../../hooks/useWindowsWidth";
 
-import "./count.css";
+import "./index.css";
 
 function Count(props) {
+  console.log(props);
   const dispatch = useDispatch();
   const count = useSelector((state) => state.count);
 

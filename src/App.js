@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import Count from "./components/count/";
+import Count from "./components/Count";
+import SearchList from "./components/SearchList";
 import requst from "./utils/request";
 import logo from "./logo.svg";
 import "./App.css";
@@ -20,7 +21,8 @@ function App() {
 
   return (
     <div className="App">
-      <Count></Count>
+      <Count name="shishaofeng">hello</Count>
+      <SearchList></SearchList>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
