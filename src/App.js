@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Count from "./components/count";
+import Count from "./components/count/";
 import requst from "./utils/request";
 import logo from "./logo.svg";
 import "./App.css";

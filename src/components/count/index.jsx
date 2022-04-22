@@ -1,11 +1,11 @@
 // redux 结合react-redux 钩子使用例子
 import { useSelector, useDispatch } from "react-redux";
 // 获取actions定义常量
-import { ADDCOUNT, MINUS } from "../redux/constant";
+import { ADDCOUNT, MINUS } from "../../redux/constant";
 // 获取actions方法
-import { countNumber } from "../redux/actions";
+import { countNumber } from "../../redux/actions";
 
-import useWindowsWidth from "../hooks/useWindowsWidth";
+import useWindowsWidth from "../../hooks/useWindowsWidth";
 
 import "./count.css";
 
